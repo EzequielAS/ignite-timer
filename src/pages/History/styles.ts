@@ -17,6 +17,21 @@ export const HistoryList = styled.div`
   flex: 1;
   overflow: auto;
   margin-top: 2rem;
+  max-height: calc(100% - 10.5rem);
+
+  &::-webkit-scrollbar-track {
+    background-color: ${({ theme }) => theme['gray-900']};
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: ${({ theme }) => theme['gray-600']};
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: ${({ theme }) => theme['gray-600']};
+  scrollbar-track-color: ${({ theme }) => theme['gray-900']};
 
   table {
     width: 100%;
