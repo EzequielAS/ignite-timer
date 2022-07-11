@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { CyclesContext } from '../../contexts/CycleContext'
 import { HandPalm, Play } from 'phosphor-react'
 import { NewCycleForm } from './components/NewCycleForm'
@@ -43,6 +43,12 @@ export function Home() {
     createNewCycle(data)
     reset()
   }
+
+  useEffect(() => {
+    if (activeCycle) return
+
+    document.title = 'Ignite Timer'
+  }, [activeCycle])
 
   return (
     <HomeContainer>
