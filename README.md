@@ -22,7 +22,7 @@
   <img src="./github/home.png" />
 </div>
 
-### Iniciando novo ciclo
+### Starting a new cycle
 
 <div 
     style="
@@ -35,7 +35,7 @@
   <img src="./github/newCycle.png" />
 </div>
 
-### Listagem de ciclos
+### Cycle list
 
 <div 
     style="
